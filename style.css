@@ -1,3 +1,77 @@
+/* Основные стили для body и всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Обеспечивает, что футер всегда будет внизу */
+}
+
+/* Основные стили для main */
+main {
+    flex: 1; /* Основная часть страницы будет занимать оставшееся пространство */
+    padding: 20px;
+}
+
+/* Контейнеры для ссылок уроков и домашних заданий */
+.Lesson-container, .homework-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступы между ссылками */
+}
+
+/* Стили для всех ссылок */
 a {
+    text-decoration: none;
     color: #000;
+    font-size: 16px;
+}
+
+/* Стили при наведении на ссылки */
+a:hover {
+    text-decoration: underline;
+    color: #ff6347; /* Цвет для наведения */
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Адаптивность для экранов с шириной до 430px (например, iPhone 14 Pro Max) */
+@media (max-width: 430px) {
+    main {
+        padding: 15px;
+    }
+
+    a {
+        font-size: 14px; /* Уменьшаем размер текста для маленьких экранов */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Адаптивность для экранов с шириной до 768px (например, iPad Mini) */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    a {
+        font-size: 15px; /* Уменьшаем шрифт для iPad */
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 15px;
+    }
 }
