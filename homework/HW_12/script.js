@@ -25,6 +25,22 @@ for(let i = 0; i < names.length; i++) {
     console.log(reversedAges)
     console.log(reversedNames)
 
+    //2.1
+
+    let formateArrayReverse = [];
+
+    for (let i = formateArray.length -1; i >= 0; i--) {
+        formateArrayReverse.push(formateArray[i]);
+        
+    }
+    //2.2
+    let formateArrayReverse1 = formateArray.reverse();
+
+    console.log(formateArrayReverse)
+    console.log(formateArrayReverse1)
+
+
+
 
 
 // Создаем пустой массив
